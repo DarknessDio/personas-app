@@ -38,6 +38,8 @@ Route::put('/municipios/{municipio}', [MunicipioController::class, 'update'])->n
 Route::get('/municipios/{municipio}/edit', [MunicipioController::class , 'edit'])->name('municipios.edit');
 
 Route::get('/departamentos', [DepartamentoController:: class, 'index'])->name('departamento.index');
+Route::post('/departamentos', [DepartamentoController::class, 'store'])->name('departamento.store');
+Route::get('/departamentos/create', [DepartamentoController::class , 'create'])->name('departamento.create');
 
 
 
