@@ -46,6 +46,8 @@ Route::put('/departamento/{departamento}', [DepartamentoController::class, 'upda
 Route::get('/departamento/{departamento}/edit', [DepartamentoController::class , 'edit'])->name('departamento.edit');
 
 Route::get('/pais', [PaisController:: class, 'index'])->name('pais.index');
+Route::post('/pais', [PaisController::class, 'store'])->name('pais.store');
+Route::get('/pais/create', [PaisController::class , 'create'])->name('pais.create');
 
 
 
